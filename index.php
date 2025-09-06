@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'get') {
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $number = $_GET["convert-number"];
     $FirstUnit = $_GET["Unit"];
     if (is_numeric($number)) {
