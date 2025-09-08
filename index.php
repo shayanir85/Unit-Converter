@@ -47,6 +47,8 @@ function teranslate($FirstUnit, $SecendUnit, $number)
         if ($SecendUnit == 'C') {
             return C($number);
         }
+    }else{
+        return 0;
     }
 }
 function KG($number)
