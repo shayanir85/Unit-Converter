@@ -53,19 +53,19 @@ function teranslate($FirstUnit, $SecendUnit, $number)
 }
 function KG($number)
 {
-    return $number / 1000;
+    return $number / 1000 . 'KG';
 }
 function G($number)
 {
-    return $number * 1000;
+    return $number * 1000 . 'gram';
 }
 function C($number)
 {
-    return ($number - 32) * 5 / 9;
+    return ($number - 32) * 5 / 9 . 'C';
 }
 function F($number)
 {
-    return ($number * 9 / 5) + 32;
+    return ($number * 9 / 5) + 32 . 'F';
 }
 ?>
 
@@ -92,9 +92,8 @@ function F($number)
             <br>
             <button type="submit">Convert</button>
         </form>
-        <br>
-        <div>
-            <?php (convertion() == 0) ? 'invalid convertion' : print "<span> answer =>\n" . convertion() . " </span>"; ?>
+        <div class="answer">
+            <?php (convertion() == 0) ? print '<span> invalid convertion </span>' : print "<span> answer =>\n" . convertion() . " </span>"; ?>
         </div>
     </main>
     <script src="js/main.js"></script>
